@@ -62,7 +62,7 @@ The IMA will be implemented on the Nexys A7-100T board, allowing the the user to
 
 ## Proposed Solution
 
-The IMA will be implemented on the Nexys A7-100T board, allowing the the user to load one uncompressed 12-bit RGB colour image-mask pair onto a simulated SD card (BRAM). The system would then apply the image mask to the image using a XOR operation described by Rishabh Singh [3] and shown in [Figure 1](#figure-4) below. The processed image will then be displayed to a VGA interface using the methods found **Section 8.1** of the Nexys A7 reference guide [4] and timing specifications described by B, Eater [5].
+The IMA will be implemented on the Nexys A7-100T board, allowing the the user to load one uncompressed 12-bit RGB colour image-mask pair onto a simulated SD card (BRAM). The system would then apply the image mask to the image using a XOR operation described by Rishabh Singh [3] and shown in [Figure 4](#figure-4) below. The processed image will then be displayed to a VGA interface using the methods found **Section 8.1** of the Nexys A7 reference guide [4] and timing specifications described by B, Eater [5].
 
 <a name="figure-4">![proposal_images/Untitled%203.png](proposal_images/Untitled%203.png)
 
