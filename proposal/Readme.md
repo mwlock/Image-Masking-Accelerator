@@ -10,7 +10,7 @@ Digital Dynamo (Team leader) : Lock, Matthew | Writer of words: Mahmoodah Jaffer
 
 ---
 
-![proposal_images/Untitled.png](proposal_images/Untitled.png)
+![proposal_images/Untitled.png](proposal_images/banner.png)
 
 <div align="center"> Figure 1 : Illustration of XOR image masking</div>
 
