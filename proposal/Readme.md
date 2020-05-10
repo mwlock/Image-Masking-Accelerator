@@ -10,9 +10,9 @@ Digital Dynamo (Team leader) : Lock, Matthew | Writer of words: Mahmoodah Jaffer
 
 ---
 
-![proposal_images/Untitled.png](proposal_images/banner.png)
+<a name="figure-1">![proposal_images/Untitled.png](proposal_images/banner.png)
 
-<a name="figure-1"></a><div align="center"> Figure 1 : Illustration of XOR image masking</div>
+</a><div align="center"> Figure 1 : Illustration of XOR image masking</div>
 
 # Project Description
 
@@ -20,13 +20,13 @@ Image masking is a bitwise graphics processing tool used to hide, reveal, or ove
 
 An example of an image mask be can seen in the second image of [Figure 1](#figure-1) where the image mask is a black (represented by 0s to show there is no RGB data ) and white (represented by 1s to show an activated pixel ) image with the same dimensions as the unmasked image. When executing bitwise XOR operations on the unmasked image, the mask should restrict the resulting image to the corresponding pixels that are 0 (black) in the mask, thereby restricting the resulting image and removing certain parts of the original image[2]. Notice how the white side of the image in [Figure 1](#figure-1) is restricted to the corresponding black pixels of the mask, while the corresponding white part is removed from the image. Ideally the black pixels on the right side of the image should remain black as there is nothing to remove. Unfortunately due to the nature of XOR operations there is an unintended consequence. As seen, a portion gets added to the right side of the image. This is in inherent limitation of XOR image masking and will require some additional processing to remove pure black pixels from the original image.  A more natural graphical representation of XOR image masking can be seen in [Figure 2](#figure-2).
 
-![proposal_images/Untitled%201.png](proposal_images/Untitled%201.png)
+<a name="figure-2">![proposal_images/Untitled%201.png](proposal_images/Untitled%201.png)
 
-<a name="figure-2"><div align="center"> Figure 2 : Process of bitwise XOR image masking</div>
+<div align="center"> Figure 2 : Process of bitwise XOR image masking</div>
 
-![proposal_images/Untitled%202.png](proposal_images/Untitled%202.png)
+<a name="figure-3">![proposal_images/Untitled%202.png](proposal_images/Untitled%202.png)
 
-<a name="figure-3"><div align="center"> Figure 3 : Process of overlaying of images using image masking</div>
+<div align="center"> Figure 3 : Process of overlaying of images using image masking</div>
 
 # Plan A
 
@@ -64,9 +64,9 @@ The IMA will be implemented on the Nexys A7-100T board, allowing the the user to
 
 The IMA will be implemented on the Nexys A7-100T board, allowing the the user to load one uncompressed 12-bit RGB colour image-mask pair onto a simulated SD card (BRAM). The system would then apply the image mask to the image using a XOR operation described by Rishabh Singh [3] and shown in [Figure 1](#figure-4) below. The processed image will then be displayed to a VGA interface using the methods found **Section 8.1** of the Nexys A7 reference guide [4] and timing specifications described by B, Eater [5].
 
-![proposal_images/Untitled%203.png](proposal_images/Untitled%203.png)
+<a name="figure-4">![proposal_images/Untitled%203.png](proposal_images/Untitled%203.png)
 
-<a name="figure-4"><div align="center"> Figure 4 : Process of simple image masking using XOR operations</div>
+<div align="center"> Figure 4 : Process of simple image masking using XOR operations</div>
 
 ## Prototype Specification
 
@@ -85,9 +85,14 @@ The IMA will be implemented on the Nexys A7-100T board, allowing the the user to
 
 In order to work as effectively as possible in a situation where only two of our members have access to FPGAs, we have carefully allocated different responsibilities and tasks to the most appropriate team members. Where development requires extensive hardware testing, those with access an FPGA have been assigned. Development through benchmark testing has been assigned to members without access to an FPGA. Weekly meetings have scheduled in order to keep up with all the preset deadlines, with adjustments to the work breakdown structure taking place as needed. The initial work breakdown structure can be found below
 
- 
+**Initial Work Breakdown Structure**:
+| Member                 | Responsibilities   |	Access to FPGA | 
+| :------------------------ | :-------------| :-------------|
+| Matthew Lock           | VGA Video Card Adapter | Yes
+| Lawrence Godfrey       | VGA Video Card Adapter | Yes
+| Mahmoodah Jaffer       | <ul><li>Implementation of SD and Memory Controller</li><li>Input Operation : Image Cycling</li></ul>| No
+| Luca Barbas       | <ul><li>XOR Operation and result storing</li><li>Additional Research</li></ul>| No
 
-[Initial Work Breakdown Structure](https://www.notion.so/3d277dd9bd014be8b436f2d2a0d44b79)
 
 # Bibliography
 
