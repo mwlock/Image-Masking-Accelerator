@@ -8,17 +8,20 @@ Status: In progress
 
 Digital Dynamo (Team leader) : Lock, Matthew | Writer of words: Mahmoodah Jaffer | Manipulator of pixels: Lawrence Godfrey |  Finder of Computer Components: Barbas, Luca
 
+
 ---
 
-<a name="figure-1">![proposal_images/Untitled.png](proposal_images/banner.png)
-
-</a><div align="center"> Figure 1 : Illustration of XOR image masking</div>
+<a name="banner">![proposal_images/Banner.png](proposal_images/Banner.png)
 
 # Project Description
 
 Image masking is a bitwise graphics processing tool used to hide, reveal, or overlay certain potions of an image. Another use of image masking is for for image filtering or edge detection [1]. The problem of focus for this project is to develop an image masking accelerator (IMA) to perform XOR masking. The IMA must perform masking on at least one image-mask pair stored on an SD card to hide a portion of the image as described by the image mask. If time permits, a secondary feature will be implemented to allow for the overlaying of one image over another. An  example of this secondary feature can be found in [Figure 3](#figure-13  The resulting image produced by the IMGA will be displayed to a screen using a VGA interface.
 
-An example of an image mask be can seen in the second image of [Figure 1](#figure-1) where the image mask is a black (represented by 0s to show there is no RGB data ) and white (represented by 1s to show an activated pixel ) image with the same dimensions as the unmasked image. When executing bitwise XOR operations on the unmasked image, the mask should restrict the resulting image to the corresponding pixels that are 0 (black) in the mask, thereby restricting the resulting image and removing certain parts of the original image[2]. Notice how the white side of the image in [Figure 1](#figure-1) is restricted to the corresponding black pixels of the mask, while the corresponding white part is removed from the image. Ideally the black pixels on the right side of the image should remain black as there is nothing to remove. Unfortunately due to the nature of XOR operations there is an unintended consequence. As seen, a portion gets added to the right side of the image. This is in inherent limitation of XOR image masking and will require some additional processing to remove pure black pixels from the original image.  A more natural graphical representation of XOR image masking can be seen in [Figure 2](#figure-2).
+An example of an image mask be can seen in the second image of [Figure 1](#figure-1) where the image mask is a black (represented by 0s to show an inactive pixel) and white (represented by 1s to show an activated pixel ) image with the same dimensions as the unmasked image. When executing   XOR operations on the unmasked image, the mask should restrict the resulting image to the corresponding pixels that are 0 (black) in the mask, thereby restricting the resulting image and removing certain parts of the original image[2]. Notice how the white side of the image in [Figure 1](#figure-1) is restricted to the corresponding black pixels of the mask, while the corresponding white part is removed from the image. Ideally the black pixels on the right side of the image should remain black as there is nothing to remove. Unfortunately due to the nature of XOR operations there is an unintended consequence. As seen, a portion gets added to the right side of the image. This is in inherent limitation of XOR image masking and will require some additional processing to remove pure black pixels from the original image.  A more natural graphical representation of XOR image masking can be seen in [Figure 2](#figure-2).
+
+<a name="figure-1">![proposal_images/Untitled.png](proposal_images/Untitled.png)
+
+</a><div align="center"> Figure 1 : Illustration of XOR image masking</div>
 
 <a name="figure-2">![proposal_images/Untitled%201.png](proposal_images/Untitled%201.png)
 
@@ -34,7 +37,7 @@ Due to the current COVID-19 pandemic, there are foreseeable as well as unpredict
 
 ## Proposed Solution
 
-The IMA will be implemented on the Nexys A7-100T board, allowing the the user to load uncompressed 12-bit RGB colour images and image masks, at a resolution of 320 x 240, into appropriate directories on an SD card. On start up, the system will verify that an SD card has been inserted and that there are at least two images ready to be masked, and at least one image mask present . If the verification is successful, the system will overlay the first image found in the directory with the second ( as shown in [Figure 3](#figure-3)) using the first image mask found. The XOR operations will be implemented in a similar manner described by Rishabh Singh[3]. The final masked image will then be displayed to a VGA interface using the methods found **Section 8.1** of the Nexys A7 reference guide [4] and timing specifications described by B, Eater [5]. Further more, the user will be able to switch between which images are to be used for overlaying, and which mask will be used. Buttons for each of the three image options will be implemented to cycle through the available images.
+The IMA will be implemented on the Nexys A7-100T board, allowing the the user to load uncompressed 12-bit RGB colour images and image masks, at a resolution of 320 x 240, into appropriate directories on an SD card. On start up, the system will verify that an SD card has been inserted and that there are at least two images ready to be masked, and at least one image mask present . If the verification is successful, the system will overlay the first image found in the directory with the second (as shown in [Figure 3](#figure-3)) using the first image mask found. The XOR operations will be implemented in a similar manner described by Rishabh Singh[3] with pixel activation being determined by a logical OR operation. The final masked image will then be displayed to a VGA interface using the methods found **Section 8.1** of the Nexys A7 reference guide [4] and timing specifications described by B, Eater [5]. Further more, the user will be able to switch between which images are to be used for overlaying, and which mask will be used. Buttons for each of the three image options will be implemented to cycle through the available images.
 
 ## Prototype Specification
 
@@ -62,7 +65,7 @@ The IMA will be implemented on the Nexys A7-100T board, allowing the the user to
 
 ## Proposed Solution
 
-The IMA will be implemented on the Nexys A7-100T board, allowing the the user to load one uncompressed 12-bit RGB colour image-mask pair onto a simulated SD card (BRAM). The system would then apply the image mask to the image using a XOR operation described by Rishabh Singh [3] and shown in [Figure 1](#figure-4) below. The processed image will then be displayed to a VGA interface using the methods found **Section 8.1** of the Nexys A7 reference guide [4] and timing specifications described by B, Eater [5].
+The IMA will be implemented on the Nexys A7-100T board, allowing the the user to load one uncompressed 12-bit RGB colour image-mask pair onto a simulated SD card (BRAM). The system will determine which pixels are activated by means of a logical OR operation, and will then apply the image mask to the image using a XOR operation described by Rishabh Singh [3] and shown in [Figure 1](#figure-4). The processed image will then be displayed to a VGA interface using the methods found **Section 8.1** of the Nexys A7 reference guide [4] and timing specifications described by B, Eater [5].
 
 <a name="figure-4">![proposal_images/Untitled%203.png](proposal_images/Untitled%203.png)
 
