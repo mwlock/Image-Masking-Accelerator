@@ -1,9 +1,5 @@
 # Image Masking Accelerator Proposal Blog
 
-Assign: Lawrence Godfrey, Mahmoodah Jaffer
-Due Date: May 11, 2020
-Status: In progress
-
 **Lock, Matthew (LCKMAT002) | Jaffer, Mahmoodah (JFFMAH001) | Godfrey, Lawrence (GDFLAW001) | Barbas, Luca (BRBLUC001)**
 
 Digital Dynamo (Team leader) : Lock, Matthew | Writer of words: Mahmoodah Jaffer | Manipulator of pixels: Lawrence Godfrey |  Finder of Computer Components: Barbas, Luca
@@ -11,7 +7,7 @@ Digital Dynamo (Team leader) : Lock, Matthew | Writer of words: Mahmoodah Jaffer
 
 ---
 
-<a name="banner">![proposal_images/Banner.png](proposal_images/Banner.png)
+<a name="banner">![proposal_images/TopBanner.png](proposal_images/TopBanner.png)
 
 # Project Description
 
@@ -27,9 +23,6 @@ An example of an image mask be can seen in the second image of [Figure 1](#figur
 
 <div align="center"> Figure 2 : Process of bitwise XOR image masking</div>
 
-<a name="figure-3">![proposal_images/Untitled%202.png](proposal_images/Untitled%202.png)
-
-<div align="center"> Figure 3 : Process of overlaying of images using image masking</div>
 
 # Plan A
 
@@ -38,6 +31,10 @@ Due to the current COVID-19 pandemic, there are foreseeable as well as unpredict
 ## Proposed Solution
 
 The IMA will be implemented on the Nexys A7-100T board, allowing the the user to load uncompressed 12-bit RGB colour images and image masks, at a resolution of 320 x 240, into appropriate directories on an SD card. On start up, the system will verify that an SD card has been inserted and that there are at least two images ready to be masked, and at least one image mask present . If the verification is successful, the system will overlay the first image found in the directory with the second (as shown in [Figure 3](#figure-3)) using the first image mask found. The XOR operations will be implemented in a similar manner described by Rishabh Singh[3] with pixel activation being determined by a logical OR operation. The final masked image will then be displayed to a VGA interface using the methods found **Section 8.1** of the Nexys A7 reference guide [4] and timing specifications described by B, Eater [5]. Further more, the user will be able to switch between which images are to be used for overlaying, and which mask will be used. Buttons for each of the three image options will be implemented to cycle through the available images.
+
+<a name="figure-3">![proposal_images/Untitled%202.png](proposal_images/Untitled%202.png)
+
+<div align="center"> Figure 3 : Process of overlaying of images using image masking</div>
 
 ## Prototype Specification
 
@@ -65,11 +62,7 @@ The IMA will be implemented on the Nexys A7-100T board, allowing the the user to
 
 ## Proposed Solution
 
-<<<<<<< HEAD
 The IMA will be implemented on the Nexys A7-100T board, allowing the the user to load one uncompressed 12-bit RGB colour image-mask pair onto a simulated SD card (BRAM). The system will determine which pixels are activated by means of a logical OR operation, and will then apply the image mask to the image using a XOR operation described by Rishabh Singh [3] and shown in [Figure 1](#figure-4). The processed image will then be displayed to a VGA interface using the methods found **Section 8.1** of the Nexys A7 reference guide [4] and timing specifications described by B, Eater [5].
-=======
-The IMA will be implemented on the Nexys A7-100T board, allowing the the user to load one uncompressed 12-bit RGB colour image-mask pair onto a simulated SD card (BRAM). The system would then apply the image mask to the image using a XOR operation described by Rishabh Singh [3] and shown in [Figure 4](#figure-4) below. The processed image will then be displayed to a VGA interface using the methods found **Section 8.1** of the Nexys A7 reference guide [4] and timing specifications described by B, Eater [5].
->>>>>>> 0da841eb4a668c35ca63ba0cb19b7ecf52549c7e
 
 <a name="figure-4">![proposal_images/Untitled%203.png](proposal_images/Untitled%203.png)
 
