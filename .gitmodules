@@ -1,0 +1,3 @@
+[submodule "ImageMasking"]
+	path = ImageMasking
+	url = https://github.com/Lawrence-Godfrey/ImageMasking.git
