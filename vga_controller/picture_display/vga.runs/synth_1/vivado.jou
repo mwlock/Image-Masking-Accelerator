@@ -2,11 +2,11 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Sun May 17 14:55:08 2020
-# Process ID: 5196
-# Current directory: /home/matthew/Matthew/UCT/2020/Embedded3/YODA Project/Image-Masking-Accelerator/VGA-Controller/vga.runs/synth_1
+# Start of session at: Tue May 19 23:35:10 2020
+# Process ID: 16513
+# Current directory: /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1
 # Command line: vivado -log vga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga.tcl
-# Log file: /home/matthew/Matthew/UCT/2020/Embedded3/YODA Project/Image-Masking-Accelerator/VGA-Controller/vga.runs/synth_1/vga.vds
-# Journal file: /home/matthew/Matthew/UCT/2020/Embedded3/YODA Project/Image-Masking-Accelerator/VGA-Controller/vga.runs/synth_1/vivado.jou
+# Log file: /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1/vga.vds
+# Journal file: /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source vga.tcl -notrace

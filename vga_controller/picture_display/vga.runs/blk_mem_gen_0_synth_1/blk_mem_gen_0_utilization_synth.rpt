@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date         : Tue May 19 18:52:26 2020
+| Date         : Tue May 19 20:33:34 2020
 | Host         : linux running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_utilization -file blk_mem_gen_0_utilization_synth.rpt -pb blk_mem_gen_0_utilization_synth.pb
 | Design       : blk_mem_gen_0
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   14 |     0 |     63400 |  0.02 |
-|   LUT as Logic          |   14 |     0 |     63400 |  0.02 |
+| Slice LUTs*             |   78 |     0 |     63400 |  0.12 |
+|   LUT as Logic          |   78 |     0 |     63400 |  0.12 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         |   12 |     0 |    126800 | <0.01 |
-|   Register as Flip Flop |   12 |     0 |    126800 | <0.01 |
+| Slice Registers         |   10 |     0 |    126800 | <0.01 |
+|   Register as Flip Flop |   10 |     0 |    126800 | <0.01 |
 |   Register as Latch     |    0 |     0 |    126800 |  0.00 |
-| F7 Muxes                |    0 |     0 |     31700 |  0.00 |
+| F7 Muxes                |   18 |     0 |     31700 |  0.06 |
 | F8 Muxes                |    0 |     0 |     15850 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 12    |          Yes |       Reset |            - |
+| 10    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -67,9 +67,9 @@ Table of Contents
 +-------------------+------+-------+-----------+-------+
 |     Site Type     | Used | Fixed | Available | Util% |
 +-------------------+------+-------+-----------+-------+
-| Block RAM Tile    | 28.5 |     0 |       135 | 21.11 |
-|   RAMB36/FIFO*    |   28 |     0 |       135 | 20.74 |
-|     RAMB36E1 only |   28 |       |           |       |
+| Block RAM Tile    | 26.5 |     0 |       135 | 19.63 |
+|   RAMB36/FIFO*    |   26 |     0 |       135 | 19.26 |
+|     RAMB36E1 only |   26 |       |           |       |
 |   RAMB18          |    1 |     0 |       270 |  0.37 |
 |     RAMB18E1 only |    1 |       |           |       |
 +-------------------+------+-------+-----------+-------+
@@ -148,13 +148,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| RAMB36E1 |   28 |        Block Memory |
-| FDRE     |   12 |        Flop & Latch |
-| LUT6     |    8 |                 LUT |
-| LUT3     |    4 |                 LUT |
+| LUT6     |   64 |                 LUT |
+| RAMB36E1 |   26 |        Block Memory |
+| MUXF7    |   18 |               MuxFx |
+| LUT5     |   12 |                 LUT |
+| FDRE     |   10 |        Flop & Latch |
 | RAMB18E1 |    1 |        Block Memory |
-| LUT5     |    1 |                 LUT |
 | LUT4     |    1 |                 LUT |
+| LUT2     |    1 |                 LUT |
 +----------+------+---------------------+
 
 

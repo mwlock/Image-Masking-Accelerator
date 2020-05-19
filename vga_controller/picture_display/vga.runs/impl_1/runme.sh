@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/matthew/Matthew/UCT/2020/Embedded3/YODA Project/Image-Masking-Accelerator/VGA-Controller/vga.runs/impl_1'
+HD_PWD='/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

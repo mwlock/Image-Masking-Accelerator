@@ -76,19 +76,18 @@ module vga(
     
     //VGA R, G and B signals coming from the main multiplexers
     //Register VGA R, G and B signals
-    reg [3:0]vga_red_cmb = 0;
-    reg [3:0]vga_green_cmb = 0;
-    reg [3:0]vga_blue_cmb = 0;
+    wire [3:0]vga_red_cmb ;
+    wire [3:0]vga_green_cmb;
+    wire [3:0]vga_blue_cmb ;
     
     //Register VGA R, G and B signals
     reg [3:0]vga_red_reg = 0;
     reg [3:0]vga_green_reg = 0;
     reg [3:0]vga_blue_reg = 0;
     
-    // ---------------------------------------------------------------
-        
-    // Generate Pixel Clock   
     
+    // ---------------------------------------------------------------        
+    // Generate Pixel Clock       
     // --------------------------------------------------------------
     
     always @(posedge CLK100MHZ) begin
@@ -124,10 +123,8 @@ module vga(
         else v_sync_reg<=!V_POL; 
     end
     
-    // ---------------------------------------------------------------
-        
-    // The active   
-    
+    // ---------------------------------------------------------------        
+    // The active       
     // --------------------------------------------------------------
     
     always @(posedge pixel_clock) begin
@@ -145,14 +142,51 @@ module vga(
     end
     
     // ---------------------------------------------------------------                
+    // BRAM TO HOLD IMAGE  
+    // --------------------------------------------------------------
+    
+    // Memory IO
+    reg ena = 1;
+    reg wea = 0;
+    reg [16:0] addra=0;
+    reg [11:0] dina=0; //We're not putting data in, so we can leave this unassigned
+    wire [11:0] douta;
+    
+    blk_mem_gen_0 RAM (
+        .clka(CLK100MHZ),    // input wire clka
+        .ena(ena),      // input wire ena
+        .wea(wea),      // input wire [0 : 0] wea
+        .addra(addra),  // input wire [16 : 0] addra
+        .dina(dina),    // input wire [11 : 0] dina
+        .douta(douta)  // output wire [11 : 0] douta
+    );
+   
+   // ---------------------------------------------------------------                
+   // Get Image Pixels
+   // --------------------------------------------------------------
+   reg [3:0] r_image=0;
+   reg [3:0] g_image=0;
+   reg [3:0] b_image=0;      
+   
+   always @(posedge CLK100MHZ) begin
+        if(active) begin
+           addra<= ( ((v_cntr_reg/2)*(FRAME_WIDTH/2)) +(h_cntr_reg)/2 ) ;
+           r_image <= douta[11:8];
+           g_image <= douta[7:4];
+           b_image <= douta[3:0];
+       end      
+   end 
+       
+    
+    // ---------------------------------------------------------------                
     // Turn Off VGA RBG Signals if outside of the active screen  
     // Make a 4-bit AND logic with the R, G and B signals       
     // --------------------------------------------------------------
-    always @(posedge pixel_clock) begin
-        vga_red_cmb<= {active,active,active,active} & 4'b1111;
-        vga_green_cmb <= {active,active,active,active} & 4'b0000;
-        vga_blue_cmb <= {active,active,active,active} & 4'b0000;        
-    end
+    
+        assign vga_red_cmb= {active,active,active,active} & r_image;
+        assign vga_green_cmb = {active,active,active,active} & g_image;
+        assign vga_blue_cmb = {active,active,active,active} & b_image;        
+ 
     
     // ---------------------------------------------------------------                
     // Register Outputs      

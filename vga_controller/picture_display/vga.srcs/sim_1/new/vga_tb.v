@@ -45,6 +45,13 @@ module vga_tb;
     wire [0:0] v_sync_reg;
     wire [0:0] v_sync_reg_dly;
     
+    // Pixel values
+    wire [16:0] addra;
+    wire [3:0] R;
+    wire [3:0] G;
+    wire [3:0] B;
+    wire active;
+    
     vga vga_cont (
         .CLK100MHZ(CLK100MHZ),
         .VGA_R(VGA_R),
@@ -66,6 +73,13 @@ module vga_tb;
     assign h_sync_reg_dly = vga_cont.h_sync_reg_dly;
     assign v_sync_reg = vga_cont.v_sync_reg;
     assign v_sync_reg_dly = vga_cont.v_sync_reg_dly;
+    
+    assign addra = vga_cont.addra;
+    assign R = vga_cont.r_image;
+    assign G = vga_cont.g_image;
+    assign B = vga_cont.b_image;
+    assign active = vga_cont.active;
+    
     
     initial begin   
         // $display("\t\ttime,\t CLK100MHZ");

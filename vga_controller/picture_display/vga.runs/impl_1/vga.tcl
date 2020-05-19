@@ -52,12 +52,15 @@ set rc [catch {
   set_property board_part digilentinc.com:nexys-a7-100t:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {/home/matthew/Matthew/UCT/2020/Embedded3/YODA Project/Image-Masking-Accelerator/VGA-Controller/vga.cache/wt} [current_project]
-  set_property parent.project_path {/home/matthew/Matthew/UCT/2020/Embedded3/YODA Project/Image-Masking-Accelerator/VGA-Controller/vga.xpr} [current_project]
-  set_property ip_output_repo {{/home/matthew/Matthew/UCT/2020/Embedded3/YODA Project/Image-Masking-Accelerator/VGA-Controller/vga.cache/ip}} [current_project]
+  set_property webtalk.parent_dir /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.cache/wt [current_project]
+  set_property parent.project_path /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.xpr [current_project]
+  set_property ip_output_repo /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{/home/matthew/Matthew/UCT/2020/Embedded3/YODA Project/Image-Masking-Accelerator/VGA-Controller/vga.runs/synth_1/vga.dcp}}
-  read_xdc {{/home/matthew/Matthew/UCT/2020/Embedded3/YODA Project/Image-Masking-Accelerator/VGA-Controller/vga.srcs/constrs_1/new/constraints.xdc}}
+  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
+  add_files -quiet /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1/vga.dcp
+  read_ip -quiet /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+  set_property is_locked true [get_files /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+  read_xdc /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.srcs/constrs_1/new/constraints.xdc
   link_design -top vga -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -133,6 +136,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
   catch { write_mem_info -force vga.mmi }
   write_bitstream -force vga.bit 
   catch {write_debug_probes -no_partial_ltxfile -quiet -force debug_nets}
