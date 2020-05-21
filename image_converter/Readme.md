@@ -1,4 +1,4 @@
-# File Format and Resolution Converter 
+# Image Format and Resolution Converter 
 
 This script was created for the needs of the VGA adapter module of the Nexys A7 100T FPGA. The VGA adapter is setup to display 320x 240 12-bit colour images. 
 Since images like these are not readily available, a simple scipt was created to convert various image formats and sizes to the required resolution and colour depth.
@@ -14,6 +14,7 @@ python3 -m pip install --upgrade Pillow
 
 ## Usage
 - The input image file must be placed in **images**
+- The user will be requested to provide the name of the image
 - The PPM output is placed in **images**
 - The output 12-bit colour coe file '**image.coe**'  is generated and placed in **coe_output**
 - An information file '**information** is generated and placed in root directory 
@@ -21,4 +22,7 @@ python3 -m pip install --upgrade Pillow
 *Convert file*
 ```
 $ make run
+
+Enter file to be downsampeld and converted to ppm :
+Example.png
 ```
