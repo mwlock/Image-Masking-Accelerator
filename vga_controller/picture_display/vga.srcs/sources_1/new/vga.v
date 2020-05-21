@@ -170,7 +170,7 @@ module vga(
    
    always @(posedge CLK100MHZ) begin
         if(active) begin
-           addra<= ( ((v_cntr_reg/2)*(FRAME_WIDTH/2)) +(h_cntr_reg)/2 ) ;
+           addra<= ( ((v_cntr_reg_dly/2)*(FRAME_WIDTH/2)) +(h_cntr_reg_dly)/2 ) ;
            r_image <= douta[11:8];
            g_image <= douta[7:4];
            b_image <= douta[3:0];

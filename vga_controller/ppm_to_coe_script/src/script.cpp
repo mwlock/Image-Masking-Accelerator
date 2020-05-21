@@ -4,13 +4,15 @@ int main(){
     using namespace std;
     using namespace LCKMAT002;
 
-    PPM rawImage = PPM("../24bitoutput.ppm","raw_image");
+    PPM rawImage = PPM("../images/24bitoutput.ppm","raw_image");
 
     ofstream inFile;
-    inFile.open ("../information");
+    string informationFileName="../information";
+    inFile.open (informationFileName);
 
     ofstream coeFile;
-    coeFile.open ("../image2.coe");
+    string coeFileName = "../image2.coe";
+    coeFile.open (coeFileName);
     coeFile<<"memory_initialization_radix=10;"<<endl;
     coeFile<<"memory_initialization_vector=";
 
@@ -32,9 +34,11 @@ int main(){
         
     }
     inFile.close();
-
     coeFile<<";";
     coeFile.close();
+    
+    cout<<"Coe file written to "<<coeFileName<<endl;
+    cout<<"File information written to "<<informationFileName<<endl;
     cout<<"Number of pixels written : "<<pointsWritten<<endl;     
 
 }

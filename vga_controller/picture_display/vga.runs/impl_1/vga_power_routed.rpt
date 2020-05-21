@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date             : Tue May 19 23:36:27 2020
+| Date             : Thu May 21 18:19:52 2020
 | Host             : linux running 64-bit Ubuntu 18.04.4 LTS
 | Command          : report_power -file vga_power_routed.rpt -pb vga_power_summary_routed.pb -rpx vga_power_routed.rpx
 | Design           : vga
@@ -50,14 +50,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      304 |       --- |             --- |
+| Slice Logic    |    <0.001 |      301 |       --- |             --- |
 |   LUT as Logic |    <0.001 |      122 |     63400 |            0.19 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Register     |    <0.001 |      101 |    126800 |            0.08 |
-|   CARRY4       |    <0.001 |        9 |     15850 |            0.06 |
+|   CARRY4       |    <0.001 |        6 |     15850 |            0.04 |
 |   F7/F8 Muxes  |    <0.001 |       18 |     63400 |            0.03 |
 |   Others       |     0.000 |       50 |       --- |             --- |
-| Signals        |    <0.001 |      407 |       --- |             --- |
+| Signals        |    <0.001 |      394 |       --- |             --- |
 | Block RAM      |     0.006 |     26.5 |       135 |           19.63 |
 | DSPs           |    <0.001 |        1 |       240 |            0.42 |
 | I/O            |    <0.001 |       15 |       210 |            7.14 |
@@ -142,11 +142,11 @@ Table of Contents
 | Name                                         | Power (W) |
 +----------------------------------------------+-----------+
 | vga                                          |     0.010 |
-|   RAM                                        |     0.007 |
-|     U0                                       |     0.007 |
-|       inst_blk_mem_gen                       |     0.007 |
-|         gnbram.gnativebmg.native_blk_mem_gen |     0.007 |
-|           valid.cstr                         |     0.007 |
+|   RAM                                        |     0.008 |
+|     U0                                       |     0.008 |
+|       inst_blk_mem_gen                       |     0.008 |
+|         gnbram.gnativebmg.native_blk_mem_gen |     0.008 |
+|           valid.cstr                         |     0.008 |
 |             bindec_a.bindec_inst_a           |    <0.001 |
 |             has_mux_a.A                      |    <0.001 |
 |             ramloop[0].ram.r                 |     0.002 |
