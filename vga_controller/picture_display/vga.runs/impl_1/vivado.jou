@@ -9,3 +9,4 @@
 # Log file: /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/impl_1/vga.vdi
 # Journal file: /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
+source vga.tcl -notrace

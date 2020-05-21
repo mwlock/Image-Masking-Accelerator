@@ -1,4 +1,4 @@
-# File Converter
+# File Format and Resolution Converter 
 
 This script was created for the needs of the VGA adapter module of the Nexys A7 100T FPGA. The VGA adapter is setup to display 320x 240 12-bit colour images. 
 Since images like these are not readily available, a simple scipt was create to convert various image formats and sizes to required resolution and colour map.
