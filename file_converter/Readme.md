@@ -5,6 +5,13 @@ Since images like these are not readily available, a simple scipt was created to
 - The output of this script is a ppm file
 - The script is able to then convert this ppm file to a **.coe initialization file** used to initialize the BRAM on the FPGA
 
+## Dependencies
+The only dependency needed to run this script is python pillow
+```
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade Pillow
+```
+
 ## Usage
 - The input image file must be placed in **images**
 - The PPM output is placed in **images**
