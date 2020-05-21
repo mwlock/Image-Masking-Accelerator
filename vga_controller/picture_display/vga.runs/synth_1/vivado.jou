@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Thu May 21 18:18:29 2020
-# Process ID: 32449
+# Start of session at: Fri May 22 01:03:59 2020
+# Process ID: 2188
 # Current directory: /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1
 # Command line: vivado -log vga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga.tcl
 # Log file: /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1/vga.vds

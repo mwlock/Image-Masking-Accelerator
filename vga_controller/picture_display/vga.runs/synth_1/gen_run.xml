@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1590077908">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1590102239">
   <File Type="VDS-TIMING-PB" Name="vga_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="vga_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="vga.dcp"/>
@@ -24,6 +24,12 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/init_files/image2.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../ppm_to_coe_script/coe_output/image.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

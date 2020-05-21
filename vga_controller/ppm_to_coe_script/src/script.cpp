@@ -1,17 +1,22 @@
 #include "PPM.h"
 
-int main(){
+int main(int argc, char *argv[]){
     using namespace std;
     using namespace LCKMAT002;
 
-    PPM rawImage = PPM("../images/24bitoutput.ppm","raw_image");
+    if (argc<1){
+        cout<<"Please enter filepath"<<endl;
+        return 0;
+    }    
+
+    PPM rawImage = PPM(argv[1],"raw_image");
 
     ofstream inFile;
     string informationFileName="../information";
     inFile.open (informationFileName);
 
     ofstream coeFile;
-    string coeFileName = "../image2.coe";
+    string coeFileName = "../coe_output/image.coe";
     coeFile.open (coeFileName);
     coeFile<<"memory_initialization_radix=10;"<<endl;
     coeFile<<"memory_initialization_vector=";

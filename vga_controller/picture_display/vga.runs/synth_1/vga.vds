@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Thu May 21 18:18:29 2020
-# Process ID: 32449
+# Start of session at: Fri May 22 01:03:59 2020
+# Process ID: 2188
 # Current directory: /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1
 # Command line: vivado -log vga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga.tcl
 # Log file: /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1/vga.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 32460 
+INFO: Helper process launched with PID 2208 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1189.465 ; gain = 67.000 ; free physical = 1218 ; free virtual = 3748
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1189.465 ; gain = 67.000 ; free physical = 473 ; free virtual = 5125
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'vga' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.srcs/sources_1/new/vga.v:23]
 	Parameter FRAME_WIDTH bound to: 10'b1010000000 
@@ -30,11 +30,11 @@ INFO: [Synth 8-638] synthesizing module 'vga' [/home/matthew/Matthew/UCT/2020/Em
 	Parameter V_MAX bound to: 10'b1000001101 
 	Parameter H_POL bound to: 1'b1 
 	Parameter V_POL bound to: 1'b1 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1/.Xil/Vivado-32449-linux/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (1#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1/.Xil/Vivado-32449-linux/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1/.Xil/Vivado-2188-linux/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (1#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1/.Xil/Vivado-2188-linux/realtime/blk_mem_gen_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'vga' (2#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.srcs/sources_1/new/vga.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1229.965 ; gain = 107.500 ; free physical = 1227 ; free virtual = 3759
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1229.965 ; gain = 107.500 ; free physical = 484 ; free virtual = 5136
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -44,15 +44,15 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1229.965 ; gain = 107.500 ; free physical = 1228 ; free virtual = 3760
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1229.965 ; gain = 107.500 ; free physical = 483 ; free virtual = 5135
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1/.Xil/Vivado-32449-linux/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'RAM'
-Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1/.Xil/Vivado-32449-linux/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'RAM'
+Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1/.Xil/Vivado-2188-linux/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'RAM'
+Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1/.Xil/Vivado-2188-linux/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'RAM'
 Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.srcs/constrs_1/new/constraints.xdc]
 Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.srcs/constrs_1/new/constraints.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_propImpl.xdc].
@@ -62,30 +62,30 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1588.434 ; gain = 0.000 ; free physical = 961 ; free virtual = 3509
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1588.441 ; gain = 0.000 ; free physical = 236 ; free virtual = 4890
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'RAM' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 1037 ; free virtual = 3584
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 310 ; free virtual = 4964
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 1037 ; free virtual = 3584
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 310 ; free virtual = 4964
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for RAM. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 1039 ; free virtual = 3585
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 312 ; free virtual = 4966
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "v_cntr_reg" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element addra_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.srcs/sources_1/new/vga.v:159]
 WARNING: [Synth 8-6014] Unused sequential element v_cntr_reg_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.srcs/sources_1/new/vga.v:112]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 1029 ; free virtual = 3575
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 303 ; free virtual = 4957
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -165,7 +165,7 @@ WARNING: [Synth 8-3332] Sequential element (h_cntr_reg_dly_reg[2]) is unused and
 WARNING: [Synth 8-3332] Sequential element (h_cntr_reg_dly_reg[1]) is unused and will be removed from module vga.
 WARNING: [Synth 8-3332] Sequential element (h_cntr_reg_dly_reg[0]) is unused and will be removed from module vga.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 1012 ; free virtual = 3565
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 295 ; free virtual = 4949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -192,13 +192,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 862 ; free virtual = 3417
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 144 ; free virtual = 4798
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 861 ; free virtual = 3417
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 146 ; free virtual = 4800
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -210,7 +210,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 859 ; free virtual = 3415
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 144 ; free virtual = 4798
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -234,7 +234,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 860 ; free virtual = 3415
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 143 ; free virtual = 4797
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -247,7 +247,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 860 ; free virtual = 3415
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 143 ; free virtual = 4797
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -259,25 +259,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 860 ; free virtual = 3415
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 143 ; free virtual = 4797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 860 ; free virtual = 3415
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 143 ; free virtual = 4797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 860 ; free virtual = 3415
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 143 ; free virtual = 4797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 860 ; free virtual = 3415
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 143 ; free virtual = 4797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -316,11 +316,11 @@ Report Instance Areas:
 |1     |top      |       |   169|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 860 ; free virtual = 3415
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 143 ; free virtual = 4797
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1588.434 ; gain = 107.500 ; free physical = 925 ; free virtual = 3480
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1588.434 ; gain = 465.969 ; free physical = 925 ; free virtual = 3480
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1588.441 ; gain = 107.500 ; free physical = 208 ; free virtual = 4862
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1588.441 ; gain = 465.977 ; free physical = 208 ; free virtual = 4862
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -331,7 +331,7 @@ No Unisim elements were transformed.
 
 17 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1604.449 ; gain = 498.566 ; free physical = 897 ; free virtual = 3451
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1604.457 ; gain = 498.574 ; free physical = 179 ; free virtual = 4832
 INFO: [Common 17-1381] The checkpoint '/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.runs/synth_1/vga.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1628.461 ; gain = 0.000 ; free physical = 896 ; free virtual = 3450
-INFO: [Common 17-206] Exiting Vivado at Thu May 21 18:19:03 2020...
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1628.469 ; gain = 0.000 ; free physical = 178 ; free virtual = 4831
+INFO: [Common 17-206] Exiting Vivado at Fri May 22 01:04:28 2020...
