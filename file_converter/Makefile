@@ -1,2 +1,3 @@
 run:
-	python src/script.py
+	cd src;\
+	python script.py
