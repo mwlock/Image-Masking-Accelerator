@@ -27,7 +27,7 @@ int main(int argc, char *argv[]){
         for (size_t x = 0; x < rawImage.getNcols(); x++){
             int value = (int(rawImage.getR(y,x))/16)<<8;
             value |= (int(rawImage.getG(y,x))/16)<<4;
-            value |= (int(rawImage.getG(y,x))/16);
+            value |= (int(rawImage.getB(y,x))/16);
             coeFile<<int(value)<<",";
             pointsWritten+=3;
 

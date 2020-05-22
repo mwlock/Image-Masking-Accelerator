@@ -50,6 +50,7 @@ module vga_tb;
     wire [3:0] R;
     wire [3:0] G;
     wire [3:0] B;
+    wire [11:0] dout;
     wire active;
     
     vga vga_cont (
@@ -78,6 +79,7 @@ module vga_tb;
     assign R = vga_cont.r_image;
     assign G = vga_cont.g_image;
     assign B = vga_cont.b_image;
+    assign dout = vga_cont.douta;
     assign active = vga_cont.active;
     
     
