@@ -23,6 +23,7 @@ add_files /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga
 add_files /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/init_files/bird_image.coe
 add_files /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/init_files/colour_image.coe
 add_files /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/init_files/new_colour_image.coe
+add_files /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/init_files/bird.coe
 read_verilog -library xil_defaultlib /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.srcs/sources_1/new/vga.v
 read_ip -quiet /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/vga_controller/picture_display/vga.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
