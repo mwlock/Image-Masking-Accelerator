@@ -34,6 +34,9 @@ module loadmemez_tb();
     wire [11:0] image1[0:ADDRESSES -1];
     wire [11:0] image2[0:ADDRESSES -1];
     wire [11:0] image3[0:ADDRESSES -1];
+    
+    wire[1:0] OP_EN;
+    wire[1:0] WRITE_ENABLE;
         
     loadmemez loadmemez_U0(
         .CLK100MHZ (CLK100MHZ),
@@ -53,6 +56,9 @@ module loadmemez_tb();
     assign data_1 = loadmemez_U0.data_1;
     assign data_2 = loadmemez_U0.data_2;
     assign data_3 = loadmemez_U0.data_3;
+    
+    assign OP_EN = loadmemez_U0.OP_EN;
+    assign WRITE_ENABLE = loadmemez_U0.WRITE_ENABLE;
     
     initial begin
         CLK100MHZ = 0;

@@ -32,13 +32,15 @@ module loadmemez(
     reg wea = 0;
     reg [16:0] addra=0;
     reg [11:0] dina=0;       //We're not putting data in, so we can leave this unassigned
-    wire [11:0] data_1;
-    wire [11:0] data_2;
-    wire [11:0] data_3; 
-    reg [1:0] WRITE_ENABLE;
-    reg [1:0] OP_EN;
+    wire[11:0] data_1;
+    wire[11:0] data_2;
+    wire[11:0] data_3; 
     
-    wire [0:0] done;
+    reg [0:0] started = 0;
+    reg [1:0] WRITE_ENABLE=0;
+    reg [1:0] OP_EN=0;
+    
+    wire [0:0] done=0;
 
    // Instantiate BRAM 1 ==============================================================================================
    
@@ -91,8 +93,15 @@ module loadmemez(
     //Main function
     always@(posedge CLK100MHZ)
     begin
+    
+        // Allow time for first datapoint to be loaded
+        if (!started) begin
+            started<=1;
+            WRITE_ENABLE<=1;
+        end
+    
         // Step 1: Populate the image registers with BRAM data
-        if(addra < (ADDRESSES-1)) begin
+        else if(addra < (ADDRESSES-1)) begin
             WRITE_ENABLE<=1;
             addra <= addra + 1;
         end
