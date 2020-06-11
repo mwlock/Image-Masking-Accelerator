@@ -1,3 +1,4 @@
+rudimentary_ima/rudimentary_ima.sim/sim_1
 vga_controller/picture_display/vga.sim
 vga_controller/solid_colour_display/vga.sim
 *.o
