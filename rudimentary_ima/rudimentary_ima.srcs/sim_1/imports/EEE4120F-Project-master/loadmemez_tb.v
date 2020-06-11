@@ -22,7 +22,7 @@
 
 module loadmemez_tb();
 
-    parameter ADDRESSES = 78600 ;
+    parameter ADDRESSES = 10 ;
     reg CLK100MHZ;
     wire [15:0] LED;
     wire ena = 1;
@@ -31,9 +31,9 @@ module loadmemez_tb();
     wire [11:0] data_2;
     wire [11:0] data_3;
     
-    reg [11:0] image1[0:ADDRESSES -1];
-    reg [11:0] image2[0:ADDRESSES -1];
-    reg [11:0] image3[0:ADDRESSES -1];
+    wire [11:0] image1[0:ADDRESSES -1];
+    wire [11:0] image2[0:ADDRESSES -1];
+    wire [11:0] image3[0:ADDRESSES -1];
         
     loadmemez loadmemez_U0(
         .CLK100MHZ (CLK100MHZ),
@@ -41,12 +41,12 @@ module loadmemez_tb();
     );
     
     // Assign wires to internal images
-//    genvar i;
-//    for (i=0;i < 10; i= i+1) begin
-//        assign image1[i] = loadmemez_U0.yolo_swag.image1[i];  
-//        assign image2[i] = loadmemez_U0.yolo_swag.image1[i];  
-//        assign image3[i] = loadmemez_U0.yolo_swag.mask[i];  
-//    end
+    genvar i;
+    for (i=0;i < ADDRESSES; i= i+1) begin
+        assign image1[i] = loadmemez_U0.yolo_swag.image1[i];  
+        assign image2[i] = loadmemez_U0.yolo_swag.image1[i];  
+        assign image3[i] = loadmemez_U0.yolo_swag.mask[i];  
+    end
     
     assign ena = loadmemez_U0.ena;
     assign addra = loadmemez_U0.addra;

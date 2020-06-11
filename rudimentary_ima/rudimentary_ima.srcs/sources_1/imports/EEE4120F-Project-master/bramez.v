@@ -33,7 +33,7 @@ module bramez(
     output reg [0:0]done              // replace with a finished indicator????
     );
     //instantiate parameters
-    parameter ADDRESSES = 8 ;
+    parameter ADDRESSES = 76800 ;
     //instantiate registers
     reg [11:0] image1[0:ADDRESSES-1];          //image 1 register
     reg [11:0] image2[0:ADDRESSES-1];          //image 2 register

@@ -93,7 +93,7 @@ module loadmemez(
     begin
         // Step 1: Populate the image registers with BRAM data
         if(addra < (ADDRESSES-1)) begin
-            WRITE_ENABLE=1;
+            WRITE_ENABLE<=1;
             addra <= addra + 1;
         end
         // Step 2: Perform image masking process using bit operations
