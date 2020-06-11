@@ -27,13 +27,15 @@ module loadmemez_tb();
     wire [15:0] LED;
     wire ena = 1;
     wire [16:0] addra;
+    wire [16:0] addra_delayed_1;
+    wire [16:0] addra_delayed_2;
     wire [11:0] data_1;
     wire [11:0] data_2;
     wire [11:0] data_3;
     
     wire [11:0] image1[0:ADDRESSES -1];
     wire [11:0] image2[0:ADDRESSES -1];
-    wire [11:0] image3[0:ADDRESSES -1];
+    wire [11:0] mask[0:ADDRESSES -1];
     
     wire[1:0] OP_EN;
     wire[1:0] WRITE_ENABLE;
@@ -47,12 +49,14 @@ module loadmemez_tb();
     genvar i;
     for (i=0;i < ADDRESSES; i= i+1) begin
         assign image1[i] = loadmemez_U0.yolo_swag.image1[i];  
-        assign image2[i] = loadmemez_U0.yolo_swag.image1[i];  
-        assign image3[i] = loadmemez_U0.yolo_swag.mask[i];  
+        assign image2[i] = loadmemez_U0.yolo_swag.image2[i];  
+        assign mask[i] = loadmemez_U0.yolo_swag.mask[i];  
     end
     
     assign ena = loadmemez_U0.ena;
     assign addra = loadmemez_U0.addra;
+    assign addra_delayed_1 = loadmemez_U0.addra_delayed_1;
+    assign addra_delayed_2 = loadmemez_U0.addra_delayed_2;
     assign data_1 = loadmemez_U0.data_1;
     assign data_2 = loadmemez_U0.data_2;
     assign data_3 = loadmemez_U0.data_3;

@@ -31,6 +31,8 @@ module loadmemez(
     reg ena = 1;
     reg wea = 0;
     reg [16:0] addra=0;
+    reg [16:0] addra_delayed_1=0;
+    reg [16:0] addra_delayed_2=0;
     reg [11:0] dina=0;       //We're not putting data in, so we can leave this unassigned
     wire[11:0] data_1;
     wire[11:0] data_2;
@@ -82,7 +84,7 @@ module loadmemez(
         .RESET(RESET),
         .BTNC(BTNC),
         .WRITE_ENABLE(WRITE_ENABLE),
-        .address(addra),
+        .address(addra_delayed_2),
         .data_1 (data_1),        //*****
         .data_2(data_2),
         .data_3(data_3),
@@ -95,15 +97,17 @@ module loadmemez(
     begin
     
         // Allow time for first datapoint to be loaded
-        if (!started) begin
-            started<=1;
-            WRITE_ENABLE<=1;
-        end
+//        if (!started) begin
+//            started<=1;
+////            WRITE_ENABLE<=1;
+//        end
     
         // Step 1: Populate the image registers with BRAM data
-        else if(addra < (ADDRESSES-1)) begin
-            WRITE_ENABLE<=1;
+        if(addra < (ADDRESSES-1)) begin
             addra <= addra + 1;
+            addra_delayed_1<=addra;
+            addra_delayed_2<=addra_delayed_1;
+            if (addra>0) WRITE_ENABLE<=1;
         end
         // Step 2: Perform image masking process using bit operations
         else begin

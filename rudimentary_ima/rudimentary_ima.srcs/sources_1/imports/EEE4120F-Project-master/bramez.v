@@ -33,12 +33,14 @@ module bramez(
     output reg [0:0]done              // replace with a finished indicator????
     );
     //instantiate parameters
-    parameter ADDRESSES = 76800 ;
+    parameter ADDRESSES = 10 ;
     //instantiate registers
     reg [11:0] image1[0:ADDRESSES-1];          //image 1 register
     reg [11:0] image2[0:ADDRESSES-1];          //image 2 register
     reg [11:0] mask[0:ADDRESSES-1];            //mask register
-    reg [7:0] i = 0;                           //to iterate through     
+    integer i;                           //to iterate through     
+    
+    generate
     
     always@(posedge CLK100MHZ) begin
         if(RESET) begin
@@ -55,12 +57,14 @@ module bramez(
             // Execute operation 
             for (i=0;i < ADDRESSES; i= i+1) begin
                 image1[i] <= (image1[i] ^ mask[i]) & image1[i];
-                image2[i] <= (image2[i] ^ (~mask[i]) ) & image2[i];
-//                image1[i] = image1[i] ^ image2[i]; 
+                image2[i] <= (image2[i] ^ mask[i]) & image2[i];
+                image1[i] = image1[i] ^ image2[i]; 
             end
             //operation has finished and awaiting VGA call 
             done <= 1;    
         end
    end
+   
+   endgenerate
      
 endmodule

@@ -1,11 +1,11 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
--- Date        : Thu Jun 11 15:09:32 2020
+-- Date        : Thu Jun 11 15:13:54 2020
 -- Host        : linux running 64-bit Ubuntu 18.04.4 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_stub.vhdl
--- Design      : blk_mem_gen_1
+-- Command     : write_vhdl -force -mode synth_stub -rename_top blk_mem_gen_1 -prefix
+--               blk_mem_gen_1_ blk_mem_gen_2_stub.vhdl
+-- Design      : blk_mem_gen_2
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1
 -- --------------------------------------------------------------------------------

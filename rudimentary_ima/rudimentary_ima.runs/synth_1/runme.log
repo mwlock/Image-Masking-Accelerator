@@ -1,0 +1,423 @@
+
+*** Running vivado
+    with args -log loadmemez.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source loadmemez.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source loadmemez.tcl -notrace
+Command: synth_design -top loadmemez -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18824 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1190.465 ; gain = 68.000 ; free physical = 1023 ; free virtual = 5782
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'loadmemez' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/loadmemez.v:23]
+	Parameter ADDRESSES bound to: 76800 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (1#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (2#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (3#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'bramez' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:23]
+	Parameter ADDRESSES bound to: 10 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element image1_reg[0] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:52]
+WARNING: [Synth 8-6014] Unused sequential element image1_reg[1] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:52]
+WARNING: [Synth 8-6014] Unused sequential element image1_reg[2] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:52]
+WARNING: [Synth 8-6014] Unused sequential element image1_reg[3] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:52]
+WARNING: [Synth 8-6014] Unused sequential element image1_reg[4] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:52]
+WARNING: [Synth 8-6014] Unused sequential element image1_reg[5] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:52]
+WARNING: [Synth 8-6014] Unused sequential element image1_reg[6] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:52]
+WARNING: [Synth 8-6014] Unused sequential element image1_reg[7] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:52]
+WARNING: [Synth 8-6014] Unused sequential element image1_reg[8] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:52]
+WARNING: [Synth 8-6014] Unused sequential element image1_reg[9] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:52]
+WARNING: [Synth 8-6014] Unused sequential element image2_reg[0] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:53]
+WARNING: [Synth 8-6014] Unused sequential element image2_reg[1] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:53]
+WARNING: [Synth 8-6014] Unused sequential element image2_reg[2] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:53]
+WARNING: [Synth 8-6014] Unused sequential element image2_reg[3] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:53]
+WARNING: [Synth 8-6014] Unused sequential element image2_reg[4] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:53]
+WARNING: [Synth 8-6014] Unused sequential element image2_reg[5] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:53]
+WARNING: [Synth 8-6014] Unused sequential element image2_reg[6] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:53]
+WARNING: [Synth 8-6014] Unused sequential element image2_reg[7] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:53]
+WARNING: [Synth 8-6014] Unused sequential element image2_reg[8] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:53]
+WARNING: [Synth 8-6014] Unused sequential element image2_reg[9] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:53]
+WARNING: [Synth 8-6014] Unused sequential element mask_reg[0] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:54]
+WARNING: [Synth 8-6014] Unused sequential element mask_reg[1] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:54]
+WARNING: [Synth 8-6014] Unused sequential element mask_reg[2] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:54]
+WARNING: [Synth 8-6014] Unused sequential element mask_reg[3] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:54]
+WARNING: [Synth 8-6014] Unused sequential element mask_reg[4] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:54]
+WARNING: [Synth 8-6014] Unused sequential element mask_reg[5] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:54]
+WARNING: [Synth 8-6014] Unused sequential element mask_reg[6] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:54]
+WARNING: [Synth 8-6014] Unused sequential element mask_reg[7] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:54]
+WARNING: [Synth 8-6014] Unused sequential element mask_reg[8] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:54]
+WARNING: [Synth 8-6014] Unused sequential element mask_reg[9] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:54]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:46]
+INFO: [Synth 8-256] done synthesizing module 'bramez' (4#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:23]
+WARNING: [Synth 8-689] width (2) of port connection 'WRITE_ENABLE' does not match port width (1) of module 'bramez' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/loadmemez.v:86]
+WARNING: [Synth 8-689] width (2) of port connection 'OP_EN' does not match port width (1) of module 'bramez' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/loadmemez.v:91]
+WARNING: [Synth 8-3848] Net RESET in module/entity loadmemez does not have driver. [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/loadmemez.v:84]
+WARNING: [Synth 8-3848] Net BTNC in module/entity loadmemez does not have driver. [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/loadmemez.v:85]
+INFO: [Synth 8-256] done synthesizing module 'loadmemez' (5#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/loadmemez.v:23]
+WARNING: [Synth 8-3331] design bramez has unconnected port BTNC
+WARNING: [Synth 8-3331] design bramez has unconnected port address[16]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[15]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[14]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[13]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[12]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[11]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[10]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[9]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[8]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[7]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[6]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[5]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[4]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[3]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[2]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[1]
+WARNING: [Synth 8-3331] design bramez has unconnected port address[0]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_1[11]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_1[10]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_1[9]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_1[8]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_1[7]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_1[6]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_1[5]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_1[4]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_1[3]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_1[2]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_1[1]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_1[0]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_2[11]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_2[10]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_2[9]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_2[8]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_2[7]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_2[6]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_2[5]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_2[4]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_2[3]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_2[2]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_2[1]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_2[0]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_3[11]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_3[10]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_3[9]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_3[8]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_3[7]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_3[6]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_3[5]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_3[4]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_3[3]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_3[2]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_3[1]
+WARNING: [Synth 8-3331] design bramez has unconnected port data_3[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1230.965 ; gain = 108.500 ; free physical = 1033 ; free virtual = 5792
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin yolo_swag:RESET to constant 0 [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/loadmemez.v:82]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1230.965 ; gain = 108.500 ; free physical = 1033 ; free virtual = 5792
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/dcp7/blk_mem_gen_1_in_context.xdc] for cell 'bram3'
+Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/dcp7/blk_mem_gen_1_in_context.xdc] for cell 'bram3'
+Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/dcp9/blk_mem_gen_2_in_context.xdc] for cell 'bram2'
+Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/dcp9/blk_mem_gen_2_in_context.xdc] for cell 'bram2'
+Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/dcp11/blk_mem_gen_0_in_context.xdc] for cell 'bram'
+Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/dcp11/blk_mem_gen_0_in_context.xdc] for cell 'bram'
+Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/constrs_1/new/Constraints.xdc]
+Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/constrs_1/new/Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/constrs_1/new/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/loadmemez_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/loadmemez_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1588.441 ; gain = 0.000 ; free physical = 767 ; free virtual = 5544
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'bram2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'bram3' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 837 ; free virtual = 5615
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 837 ; free virtual = 5615
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bram2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bram3. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 839 ; free virtual = 5616
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element addra_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/loadmemez.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 831 ; free virtual = 5608
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module loadmemez 
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bramez 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element addra_delayed_1_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/loadmemez.v:108]
+WARNING: [Synth 8-6014] Unused sequential element addra_delayed_2_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/loadmemez.v:87]
+WARNING: [Synth 8-6014] Unused sequential element addra_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/loadmemez.v:53]
+INFO: [Synth 8-3886] merging instance 'LED_reg[0]' (FD) to 'LED_reg[1]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[1]' (FD) to 'LED_reg[2]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[2]' (FD) to 'LED_reg[3]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[3]' (FD) to 'LED_reg[4]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[4]' (FD) to 'LED_reg[5]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[5]' (FD) to 'LED_reg[6]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[6]' (FD) to 'LED_reg[7]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[7]' (FD) to 'LED_reg[8]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[8]' (FD) to 'LED_reg[9]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[9]' (FD) to 'LED_reg[10]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[10]' (FD) to 'LED_reg[11]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[11]' (FD) to 'LED_reg[12]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[12]' (FD) to 'LED_reg[13]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[13]' (FD) to 'LED_reg[14]'
+INFO: [Synth 8-3886] merging instance 'LED_reg[14]' (FD) to 'LED_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\LED_reg[15] )
+WARNING: [Synth 8-3332] Sequential element (yolo_swag/done_reg[0]) is unused and will be removed from module loadmemez.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net done[0] with 1st driver pin 'yolo_swag/done_reg[0]/Q' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:47]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net done[0] with 2nd driver pin 'GND' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:47]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net done[0] is connected to constant driver, other driver is ignored [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:47]
+WARNING: [Synth 8-3332] Sequential element (LED_reg[15]) is unused and will be removed from module loadmemez.
+WARNING: [Synth 8-3332] Sequential element (WRITE_ENABLE_reg[1]) is unused and will be removed from module loadmemez.
+WARNING: [Synth 8-3332] Sequential element (WRITE_ENABLE_reg[0]) is unused and will be removed from module loadmemez.
+WARNING: [Synth 8-3332] Sequential element (OP_EN_reg[1]) is unused and will be removed from module loadmemez.
+WARNING: [Synth 8-3332] Sequential element (OP_EN_reg[0]) is unused and will be removed from module loadmemez.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 818 ; free virtual = 5597
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 683 ; free virtual = 5470
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
+|2     |blk_mem_gen_1 |         1|
+|3     |blk_mem_gen_2 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |blk_mem_gen_1 |     1|
+|3     |blk_mem_gen_2 |     1|
+|4     |BUFG          |     1|
+|5     |CARRY4        |     5|
+|6     |LUT1          |    17|
+|7     |LUT3          |     1|
+|8     |LUT4          |     1|
+|9     |LUT5          |     2|
+|10    |LUT6          |     1|
+|11    |FDRE          |    17|
+|12    |IBUF          |     1|
+|13    |OBUF          |    16|
++------+--------------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    98|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1589.441 ; gain = 108.500 ; free physical = 737 ; free virtual = 5523
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 737 ; free virtual = 5523
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+37 Infos, 103 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1589.441 ; gain = 483.559 ; free physical = 705 ; free virtual = 5492
+INFO: [Common 17-1381] The checkpoint '/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/loadmemez.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1589.441 ; gain = 0.000 ; free physical = 707 ; free virtual = 5494
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 11 20:34:11 2020...
