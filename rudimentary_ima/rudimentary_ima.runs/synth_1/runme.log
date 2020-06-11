@@ -14,18 +14,18 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18824 
+INFO: Helper process launched with PID 19145 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1190.465 ; gain = 68.000 ; free physical = 1023 ; free virtual = 5782
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1190.461 ; gain = 68.000 ; free physical = 959 ; free virtual = 5751
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'loadmemez' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/loadmemez.v:23]
 	Parameter ADDRESSES bound to: 76800 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (1#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/realtime/blk_mem_gen_1_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (2#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/realtime/blk_mem_gen_1_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/realtime/blk_mem_gen_2_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (3#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-19133-linux/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (1#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-19133-linux/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-19133-linux/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (2#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-19133-linux/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-19133-linux/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (3#1) [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-19133-linux/realtime/blk_mem_gen_2_stub.v:6]
 INFO: [Synth 8-638] synthesizing module 'bramez' [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:23]
 	Parameter ADDRESSES bound to: 10 - type: integer 
 WARNING: [Synth 8-6014] Unused sequential element image1_reg[0] was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/bramez.v:52]
@@ -120,7 +120,7 @@ WARNING: [Synth 8-3331] design bramez has unconnected port data_3[2]
 WARNING: [Synth 8-3331] design bramez has unconnected port data_3[1]
 WARNING: [Synth 8-3331] design bramez has unconnected port data_3[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1230.965 ; gain = 108.500 ; free physical = 1033 ; free virtual = 5792
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1230.961 ; gain = 108.500 ; free physical = 969 ; free virtual = 5763
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -131,19 +131,19 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 WARNING: [Synth 8-3295] tying undriven pin yolo_swag:RESET to constant 0 [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/loadmemez.v:82]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1230.965 ; gain = 108.500 ; free physical = 1033 ; free virtual = 5792
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1230.961 ; gain = 108.500 ; free physical = 969 ; free virtual = 5762
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/dcp7/blk_mem_gen_1_in_context.xdc] for cell 'bram3'
-Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/dcp7/blk_mem_gen_1_in_context.xdc] for cell 'bram3'
-Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/dcp9/blk_mem_gen_2_in_context.xdc] for cell 'bram2'
-Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/dcp9/blk_mem_gen_2_in_context.xdc] for cell 'bram2'
-Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/dcp11/blk_mem_gen_0_in_context.xdc] for cell 'bram'
-Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-18771-linux/dcp11/blk_mem_gen_0_in_context.xdc] for cell 'bram'
+Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-19133-linux/dcp7/blk_mem_gen_1_in_context.xdc] for cell 'bram3'
+Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-19133-linux/dcp7/blk_mem_gen_1_in_context.xdc] for cell 'bram3'
+Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-19133-linux/dcp9/blk_mem_gen_2_in_context.xdc] for cell 'bram2'
+Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-19133-linux/dcp9/blk_mem_gen_2_in_context.xdc] for cell 'bram2'
+Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-19133-linux/dcp11/blk_mem_gen_0_in_context.xdc] for cell 'bram'
+Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/.Xil/Vivado-19133-linux/dcp11/blk_mem_gen_0_in_context.xdc] for cell 'bram'
 Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/constrs_1/new/Constraints.xdc]
 Finished Parsing XDC File [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/constrs_1/new/Constraints.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/constrs_1/new/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/loadmemez_propImpl.xdc].
@@ -155,19 +155,19 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1588.441 ; gain = 0.000 ; free physical = 767 ; free virtual = 5544
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1588.438 ; gain = 0.000 ; free physical = 722 ; free virtual = 5518
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'bram2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'bram3' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 837 ; free virtual = 5615
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 760 ; free virtual = 5583
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 837 ; free virtual = 5615
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 760 ; free virtual = 5583
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -176,11 +176,11 @@ Applied set_property DONT_TOUCH = true for bram. (constraint file  auto generate
 Applied set_property DONT_TOUCH = true for bram2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for bram3. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 839 ; free virtual = 5616
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 762 ; free virtual = 5585
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element addra_reg was removed.  [/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.srcs/sources_1/imports/EEE4120F-Project-master/loadmemez.v:53]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 831 ; free virtual = 5608
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 753 ; free virtual = 5576
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -264,7 +264,7 @@ WARNING: [Synth 8-3332] Sequential element (WRITE_ENABLE_reg[0]) is unused and w
 WARNING: [Synth 8-3332] Sequential element (OP_EN_reg[1]) is unused and will be removed from module loadmemez.
 WARNING: [Synth 8-3332] Sequential element (OP_EN_reg[0]) is unused and will be removed from module loadmemez.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 818 ; free virtual = 5597
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 743 ; free virtual = 5566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -276,13 +276,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 683 ; free virtual = 5470
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 634 ; free virtual = 5438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 632 ; free virtual = 5437
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -294,7 +294,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 632 ; free virtual = 5436
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -318,7 +318,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 632 ; free virtual = 5436
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -331,7 +331,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 632 ; free virtual = 5436
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -343,25 +343,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 632 ; free virtual = 5436
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 632 ; free virtual = 5436
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 632 ; free virtual = 5436
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 632 ; free virtual = 5436
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -402,11 +402,11 @@ Report Instance Areas:
 |1     |top      |       |    98|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 682 ; free virtual = 5469
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 632 ; free virtual = 5436
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 3 critical warnings and 10 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1589.441 ; gain = 108.500 ; free physical = 737 ; free virtual = 5523
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.441 ; gain = 466.977 ; free physical = 737 ; free virtual = 5523
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1589.438 ; gain = 108.500 ; free physical = 693 ; free virtual = 5497
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1589.438 ; gain = 466.977 ; free physical = 693 ; free virtual = 5497
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -417,7 +417,7 @@ No Unisim elements were transformed.
 
 37 Infos, 103 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1589.441 ; gain = 483.559 ; free physical = 705 ; free virtual = 5492
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1589.438 ; gain = 483.559 ; free physical = 671 ; free virtual = 5467
 INFO: [Common 17-1381] The checkpoint '/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/synth_1/loadmemez.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1589.441 ; gain = 0.000 ; free physical = 707 ; free virtual = 5494
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 11 20:34:11 2020...
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1589.438 ; gain = 0.000 ; free physical = 671 ; free virtual = 5467
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 11 20:36:12 2020...

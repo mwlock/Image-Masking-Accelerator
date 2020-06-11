@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1591900578">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="loadmemez.drc"/>
+  <File Type="BG-BGN" Name="loadmemez.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="loadmemez.sysdef"/>
+  <File Type="BITSTR-MMI" Name="loadmemez.mmi"/>
+  <File Type="BITSTR-BMM" Name="loadmemez_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="loadmemez.nky"/>
+  <File Type="BITSTR-RBT" Name="loadmemez.rbt"/>
+  <File Type="BITSTR-MSK" Name="loadmemez.msk"/>
+  <File Type="BG-BIN" Name="loadmemez.bin"/>
+  <File Type="BG-BIT" Name="loadmemez.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="loadmemez_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="loadmemez_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="loadmemez_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="loadmemez_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="loadmemez_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="loadmemez_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="loadmemez_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="loadmemez_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="loadmemez_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="loadmemez_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="loadmemez_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="loadmemez_route_status.rpt"/>
+  <File Type="PLACE-CTRL" Name="loadmemez_control_sets_placed.rpt"/>
+  <File Type="PLACE-IO" Name="loadmemez_io_placed.rpt"/>
+  <File Type="PWROPT-TIMING" Name="loadmemez_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="loadmemez_placed.dcp"/>
+  <File Type="PLACE-UTIL-PB" Name="loadmemez_utilization_placed.pb"/>
+  <File Type="PHYSOPT-TIMING" Name="loadmemez_timing_summary_physopted.rpt"/>
+  <File Type="PWROPT-DRC" Name="loadmemez_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="loadmemez_pwropt.dcp"/>
+  <File Type="PLACE-UTIL" Name="loadmemez_utilization_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="loadmemez_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="loadmemez_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="loadmemez.hwdef"/>
+  <File Type="PLACE-CLK" Name="loadmemez_clock_utilization_placed.rpt"/>
+  <File Type="RDI-RDI" Name="loadmemez.vdi"/>
+  <File Type="PLACE-TIMING" Name="loadmemez_timing_summary_placed.rpt"/>
+  <File Type="INIT-TIMING" Name="loadmemez_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="loadmemez_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="loadmemez_opt.dcp"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="loadmemez_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="loadmemez_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="loadmemez_incremental_reuse_placed.rpt"/>
+  <File Type="PA-TCL" Name="loadmemez.tcl"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="loadmemez_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="loadmemez_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="loadmemez_drc_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="loadmemez_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="loadmemez_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="loadmemez_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="loadmemez_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="loadmemez_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="loadmemez_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="loadmemez_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="loadmemez_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR" Name="loadmemez_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="loadmemez_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="loadmemez_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="loadmemez_power_routed.rpx"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EEE4120F-Project-master/bramez.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/EEE4120F-Project-master/bramez.v"/>
+        <Attr Name="ImportTime" Val="1591805250"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EEE4120F-Project-master/loadmemez.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/EEE4120F-Project-master/loadmemez.v"/>
+        <Attr Name="ImportTime" Val="1591805250"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/init_files/blue.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/init_files/horse.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/init_files/red.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="loadmemez"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+</GenRun>
