@@ -1,0 +1,70 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Thu Jun 18 17:19:52 2020
+| Host         : linux running 64-bit Ubuntu 18.04.4 LTS
+| Command      : report_control_sets -verbose -file imu_controller_control_sets_placed.rpt
+| Design       : imu_controller
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     8 |
+| Unused register locations in slices containing registers |    27 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             181 |          102 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              23 |            8 |
+| Yes          | No                    | No                     |              53 |           23 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              12 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------+----------------------------+---------------------------------------+------------------+----------------+
+|     Clock Signal     |        Enable Signal       |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++----------------------+----------------------------+---------------------------------------+------------------+----------------+
+|  pixel_clock_BUFG    |                            | vga_controller/v_cntr_reg             |                3 |             11 |
+|  CLK100MHZ_IBUF_BUFG | vga_controller/active      |                                       |                5 |             12 |
+|  CLK100MHZ_IBUF_BUFG | vga_data[11]_i_1_n_0       |                                       |                5 |             12 |
+|  pixel_clock_BUFG    |                            | vga_controller/vga_red_reg[3]_i_1_n_0 |                5 |             12 |
+|  pixel_clock_BUFG    | vga_controller/v_cntr_reg  | vga_controller/v_cntr_reg0            |                3 |             12 |
+|  CLK100MHZ_IBUF_BUFG | result_data_in[11]_i_1_n_0 |                                       |               13 |             29 |
+|  pixel_clock_BUFG    |                            |                                       |               10 |             40 |
+|  CLK100MHZ_IBUF_BUFG |                            |                                       |               92 |            141 |
++----------------------+----------------------------+---------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 11     |                     1 |
+| 12     |                     4 |
+| 16+    |                     3 |
++--------+-----------------------+
+
+

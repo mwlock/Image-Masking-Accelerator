@@ -6,4 +6,4 @@
 # Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log loadmemez.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source loadmemez.tcl -notrace
+vivado -log imu_controller.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source imu_controller.tcl -notrace

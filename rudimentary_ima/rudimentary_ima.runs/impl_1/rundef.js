@@ -27,9 +27,9 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "init_design", "begin" );
+ISETouchFile( "write_bitstream", "begin" );
 ISEStep( "vivado",
-         "-log loadmemez.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source loadmemez.tcl -notrace" );
+         "-log imu_controller.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source imu_controller.tcl -notrace" );
 
 
 

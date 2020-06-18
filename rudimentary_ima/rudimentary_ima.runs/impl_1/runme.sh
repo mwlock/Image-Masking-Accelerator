@@ -37,7 +37,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
-EAStep vivado -log loadmemez.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source loadmemez.tcl -notrace
+/bin/touch .write_bitstream.begin.rst
+EAStep vivado -log imu_controller.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source imu_controller.tcl -notrace
 
 

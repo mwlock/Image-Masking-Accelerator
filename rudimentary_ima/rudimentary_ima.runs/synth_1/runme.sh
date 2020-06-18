@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log loadmemez.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source loadmemez.tcl
+EAStep vivado -log imu_controller.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source imu_controller.tcl

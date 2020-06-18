@@ -22,13 +22,32 @@
 
 module loadmemez(
     input CLK100MHZ, 
+    output [3:0] VGA_R,
+    output [3:0] VGA_G,
+    output [3:0] VGA_B,
+    output VGA_HS,
+    output VGA_VS,
     output reg [15:0] LED
 );
-    //instantiate parameters
+    // Assign necessary wires
+    
+    wire [3:0] VGA_R_out;
+    wire [3:0] VGA_G_out;
+    wire [3:0] VGA_B_out;
+    wire VGA_HS_out;
+    wire VGA_VS_out;
+    
+    assign VGA_R = VGA_R_out;
+    assign VGA_G = VGA_G_out;
+    assign VGA_B = VGA_B_out;
+    assign VGA_HS = VGA_HS_out;
+    assign VGA_VS = VGA_VS_out;
+
+    // Set parameters
     parameter ADDRESSES = 76800 ;
 
     //instantiate registers
-    reg ena = 1;
+    reg [0:0] ena = 1;
     reg wea = 0;
     reg [16:0] addra=0;
     reg [16:0] addra_delayed_1=0;
@@ -40,9 +59,10 @@ module loadmemez(
     
     reg [0:0] started = 0;
     reg [1:0] WRITE_ENABLE=0;
+    reg [1:0] READ_ENABLE=0;
     reg [1:0] OP_EN=0;
     
-    wire [0:0] done=0;
+    wire [0:0] done;
 
    // Instantiate BRAM 1 ==============================================================================================
    
@@ -79,43 +99,76 @@ module loadmemez(
    
 
     // Instantiate BRAMEZ  ==============================================================================================
-    bramez yolo_swag (
+    
+    wire [11:0] data_bramez;
+    
+    IMU yolo_swag (
         .CLK100MHZ(CLK100MHZ),
-        .RESET(RESET),
-        .BTNC(BTNC),
         .WRITE_ENABLE(WRITE_ENABLE),
+        .READ_ENABLE(READ_ENABLE),
         .address(addra_delayed_2),
+        .vga_address(addra),
         .data_1 (data_1),        //*****
         .data_2(data_2),
         .data_3(data_3),
         .OP_EN(OP_EN),
-        .done(done)
+        .done(done),
+        .dout(data_bramez)
     );
+    
+    // Instantiate VGA Controller  ========================================================================================
+    
+    wire [16:0] vga_addra;
+    reg  [11:0] vga_data=0;
+    
+    vga controller  (
+        .CLK100MHZ(CLK100MHZ),
+        .data_in(vga_data),
+        .VGA_R(VGA_R_out),
+        .VGA_G(VGA_G_out),
+        .VGA_B(VGA_B_out),
+        .VGA_HS(VGA_HS_out),
+        .VGA_VS(VGA_VS_out),
+        .addra(vga_addra)
+    );
+    
+//    vga vga_controller (
+//        .CLK100MHZ(CLK100MHZ),
+//        .data_in(vga_data),
+//        .VGA_R(VGA_R_out),
+//        .VGA_G(VGA_G_out),
+//        .VGA_B(VGA_B_out),
+//        .VGA_HS(VGA_HS_out),        
+//        .VGA_VS(VGA_VS_out),
+//        .addra(vga_addra),
+//    );
 
     //Main function
     always@(posedge CLK100MHZ)
     begin
     
-        // Allow time for first datapoint to be loaded
-//        if (!started) begin
-//            started<=1;
-////            WRITE_ENABLE<=1;
-//        end
+        if(done) begin
+            ena<=0;
+            OP_EN<=0;
+            READ_ENABLE<=1;
+            addra<=vga_addra; 
+        end
     
         // Step 1: Populate the image registers with BRAM data
-        if(addra < (ADDRESSES-1)) begin
+        else if(addra < (ADDRESSES-1)) begin
             addra <= addra + 1;
             addra_delayed_1<=addra;
             addra_delayed_2<=addra_delayed_1;
             if (addra>0) WRITE_ENABLE<=1;
         end
         // Step 2: Perform image masking process using bit operations
-        else begin
+        else if (!done) begin
             WRITE_ENABLE<=0;        //stops triggering image register population
             OP_EN<=1;               //triggers bit operations
         end
         
-        LED<=done;
+        vga_data<=data_bramez;    
+        LED<={15'b000000000000000,done};
                 
      end
 
