@@ -33,14 +33,8 @@ while (start_program):
     if (action=="mask"):mask_bool=True
     print("Mask : {}".format(mask_bool))
 
-    # Set filename of output PPM
-    outputfileName = imageName[:3+imageName[3::].find('.')] + ".ppm"
-    print("\nOutput filename:\n" + outputfileName)
-
-    outfile = open
-
     raw_image = Image.open(imageName,mode='r')       # open image
-    # ppm_file = Image.new('L',(320,240))
+
     resized = raw_image.resize((320,240))               # resize image
     pixels=resized.load()                               # load pixels
 
@@ -49,15 +43,19 @@ while (start_program):
     # Progress counter
     i = 0
 
-    print(" 0 Command Sent : ",ser.write(bytes([0])))                              # Always send 0 before command
-    if(action=='1'): print("Write Command sent : ",ser.write(bytes([1])))          # Write image 1 command
+    print("0 Command Sent : ",ser.write(bytes([0])))                                        # Always send 0 before command
+    if(action=='1'): print("Write Image 1 Command sent : ",ser.write(bytes([1])))           # Write image 1 command
+    elif(action=='2'): print("Write Image 2 Command sent : ",ser.write(bytes([2])))         # Write image 2 command
+    elif(action=='mask'): print("Write Mask Command sent : ",ser.write(bytes([4])))         # Write maskcommand
+
+    time.sleep(1)
 
     for y in range(resized.size[1]):
         for x in range(resized.size[0]):
             pixels[x,y]=(int(pixels[x,y][0]/16),int(pixels[x,y][1]/16),int(pixels[x,y][2]/16))
             if(mask_bool):
                 value = pixels[x,y][0] <<8 + pixels[x,y][1] <<4 +pixels[x,y][2]
-                pixels[x,y] = (0,0,0) if value<2046 else (255,255,255)
+                pixels[x,y] = (0,0,0) if value<2046 else (15,15,15)
             
             # Upload to FPGA
             R = pixels[x,y][0]            
