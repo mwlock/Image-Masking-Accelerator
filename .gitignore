@@ -1,6 +1,6 @@
-rudimentary_ima/rudimentary_ima.sim/sim_1
-ima_host/rudimentary_ima.sim/sim_1
-vga_controller/picture_display/vga.sim
-vga_controller/solid_colour_display/vga.sim
-ima_com_connection/ima_com_connection.sim/sim_1
+rudimentary_ima.sim/sim_1
+rudimentary_ima.sim/sim_1
+picture_display/vga.sim
+solid_colour_display/vga.sim
+ima_com_connection.sim/sim_1
 *.o

@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="impl_1" LaunchDir="/home/matthew/Matthew/UCT/2020/Embedded3/Image-Masking-Accelerator/rudimentary_ima/rudimentary_ima.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design"/>
-</Runs>
-
